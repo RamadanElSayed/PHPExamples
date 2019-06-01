@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="js/jquery-3.4.1.js"></script>
+    <title>Title</title>
+</head>
+<style>
+    /*#container{*/
+        /*width: 600px;*/
+        /*height: auto;*/
+        /*margin: auto auto;*/
+    /*}*/
+
+    /*.head{*/
+        /*height: 100px;*/
+        /*background-color: darkred;*/
+        /*margin-bottom: 10px;*/
+    /*}*/
+    /*.tail{*/
+        /*display: none;*/
+        /*height: 100px;*/
+        /*background-color: darkgray;*/
+        /*margin-bottom: 10px;*/
+
+    /*}*/
+</style>
+<body>
+
+<!--<div id="container">-->
+    <!--<div class="head"></div>-->
+    <!--<div class="tail"><h1>Cairo</h1></div>-->
+    <!--<div class="head"></div>-->
+    <!--<div class="tail"><h1>Cairo</h1></div>-->
+    <!--<div class="head"></div>-->
+    <!--<div class="tail"><h1>Cairo</h1></div>-->
+    <!--<div class="head"></div>-->
+    <!--<div class="tail"><h1>Cairo</h1></div>-->
+    <!--<div class="head"></div>-->
+    <!--<div class="tail"><h1>Cairo</h1></div>-->
+    <!--<div class="head"></div>-->
+    <!--<div class="tail"><h1>Cairo</h1></div>-->
+<!--</div>-->
+
+<?php
+echo"this is php text";
+?>
+
+<script>
+
+    $('document').ready(function () {
+
+ //   $(".tail").slideUp(50);
+    $(".head").click(function () {
+        $(this).next().slideToggle(500)
+    })
+
+    })
+</script>
+
+
+</body>
+</html>
